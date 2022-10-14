@@ -303,6 +303,7 @@ void ScientificCalculator::Calculation(int choice){
     }
 }
 
+
 void ScientificCalculator::Continuing_Calculation(int choice) {
     Option = choice;
 
