@@ -34,6 +34,7 @@ void ScientificCalculator::Calculation(int choice){
     queue<string> gqueue;
     queue<string> hqueue;
 
+	
     aqueue.push("Enter value of sin(x): \n" );
     bqueue.push("Enter Degree Angle: \n" );
     cqueue.push("Enter value of cos(x): \n" );
