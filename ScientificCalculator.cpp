@@ -305,9 +305,9 @@ void ScientificCalculator::Calculation(int choice){
 void ScientificCalculator::Continuing_Calculation(int choice) {
     Option = choice;
 
-    queue<string> hanqueue;
-    queue<string> dulqueue;
-    queue<string> setqueue;
+    queue<string> hanqueue; ///To enter base number
+    queue<string> dulqueue;  
+    queue<string> setqueue; 
     queue<string> netqueue;
 
     hanqueue.push("Insert your Base Number: \n");
