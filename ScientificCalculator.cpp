@@ -44,6 +44,7 @@ void ScientificCalculator::Calculation(int choice){
     gqueue.push("Enter Number for Calculating Square:: \n" );
     hqueue.push("Enter Natural Logarithm value: \n" );
 
+	
     switch (Option){
     case 1:
         /// For Addition
