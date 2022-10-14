@@ -656,8 +656,7 @@ void ScientificCalculator::Alternate_Calculation(int choice) {
         cout << "Ans" << ans_no << ": " << a << " + "  << b << " = " << y << endl;
         sstream << "Ans" << ans_no << ": " << a << " + "  << b << " = " << y << endl;
         history = sstream.str();
-        break;
-		    
+        break; 
 		   
     case 2:
         /// For Subtraction
