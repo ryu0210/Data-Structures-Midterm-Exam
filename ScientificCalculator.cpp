@@ -306,8 +306,8 @@ void ScientificCalculator::Continuing_Calculation(int choice) {
     Option = choice;
 
     queue<string> hanqueue; ///To enter base number
-    queue<string> dulqueue;  
-    queue<string> setqueue; 
+    queue<string> dulqueue; ///To enter exponent number
+    queue<string> setqueue; ///To enter the log base
     queue<string> netqueue;
 
     hanqueue.push("Insert your Base Number: \n");
