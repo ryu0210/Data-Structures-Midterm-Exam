@@ -308,7 +308,7 @@ void ScientificCalculator::Continuing_Calculation(int choice) {
     queue<string> hanqueue; ///To enter base number
     queue<string> dulqueue; ///To enter exponent number
     queue<string> setqueue; ///To enter the log base
-    queue<string> netqueue;
+    queue<string> netqueue; ///To enter the log argument
 
     hanqueue.push("Insert your Base Number: \n");
     dulqueue.push("Insert your Exponent Number: \n");
@@ -320,8 +320,7 @@ void ScientificCalculator::Continuing_Calculation(int choice) {
         /// To add previous output with another number
         cout << "Insert your addend: ";
         cin >> a;
-
-
+		    
         ans = x;
         x += a;
         ans_no += 1;
@@ -370,7 +369,6 @@ void ScientificCalculator::Continuing_Calculation(int choice) {
         /// To multiply previous output with another number
         cout << "Insert your multiple: ";
         cin >> a;
-
 
         ans = x;
         x *= a;
@@ -660,8 +658,7 @@ void ScientificCalculator::Alternate_Calculation(int choice) {
         history = sstream.str();
         break;
 		    
-		    
-
+		   
     case 2:
         /// For Subtraction
         cout << "The formula follows: Minuend - Subtrand = difference" << endl;
