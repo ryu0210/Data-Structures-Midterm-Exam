@@ -658,6 +658,8 @@ void ScientificCalculator::Alternate_Calculation(int choice) {
         sstream << "Ans" << ans_no << ": " << a << " + "  << b << " = " << y << endl;
         history = sstream.str();
         break;
+		    
+		    
 
     case 2:
         /// For Subtraction
