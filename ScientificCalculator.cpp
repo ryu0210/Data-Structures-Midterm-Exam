@@ -25,6 +25,24 @@ ScientificCalculator::ScientificCalculator(){
 void ScientificCalculator::Calculation(int choice){
     Option = choice;
 
+    queue<string> aqueue;
+    queue<string> bqueue;
+    queue<string> cqueue;
+    queue<string> dqueue;
+    queue<string> equeue;
+    queue<string> fqueue;
+    queue<string> gqueue;
+    queue<string> hqueue;
+
+    aqueue.push("Enter value of sin(x): \n" );
+    bqueue.push("Enter Degree Angle: \n" );
+    cqueue.push("Enter value of cos(x): \n" );
+    dqueue.push("Enter Degree Angle: \n" );
+    equeue.push("Enter value of tan(x): \n" );
+    fqueue.push("Enter Degree Angle: \n" );
+    gqueue.push("Enter Number for Calculating Square:: \n" );
+    hqueue.push("Enter Natural Logarithm value: \n" );
+
     switch (Option){
     case 1:
         /// For Addition
@@ -97,7 +115,10 @@ void ScientificCalculator::Calculation(int choice){
 
         if (c == 1){
             /// For value of sin(x)
-            cout << "Enter value of sin(x): ";
+            while (aqueue.size() > 0){
+            	cout << aqueue.front();
+            	aqueue.pop();
+			};
             cin >> a;
 
             x = sin(a);
@@ -109,7 +130,10 @@ void ScientificCalculator::Calculation(int choice){
 
         else if (c == 2){
             /// For value of sin(x) using Degree Angle
-            cout << "Enter Degree Angle: ";
+            while (bqueue.size() > 0){
+            	cout << bqueue.front();
+            	bqueue.pop();
+			};
             cin >> a;
 
             radian = a*3.14159/180;
@@ -133,7 +157,10 @@ void ScientificCalculator::Calculation(int choice){
 
         if (c == 1){
             /// For value of cos(x)
-            cout << "Enter value of cos(x): ";
+            while (cqueue.size() > 0){
+            	cout << cqueue.front();
+            	cqueue.pop();
+			};
             cin >> a;
 
             x = cos(a);
@@ -145,7 +172,10 @@ void ScientificCalculator::Calculation(int choice){
 
         else if (c == 2){
             /// For value of cos(x) using degree angle
-            cout << "Enter Degree Angle: ";
+            while (dqueue.size() > 0){
+            	cout << dqueue.front();
+            	dqueue.pop();
+			};
             cin >> a;
 
             radian = a*3.14159/180;
@@ -169,7 +199,10 @@ void ScientificCalculator::Calculation(int choice){
 
         if (c == 1){
             /// For value of tan(x)
-            cout << "Enter value of tan(x): ";
+            while (equeue.size() > 0){
+            	cout << equeue.front();
+            	equeue.pop();
+			};
             cin >> a;
 
             x = tan(a);
@@ -181,7 +214,10 @@ void ScientificCalculator::Calculation(int choice){
 
         else if (c == 2){
             /// For value of tan(x) using degree angle
-            cout << "Enter Degree Angle: ";
+            while (fqueue.size() > 0){
+            	cout << fqueue.front();
+            	fqueue.pop();
+			};
             cin >> a;
 
             radian = a*3.14159/180;
@@ -198,7 +234,10 @@ void ScientificCalculator::Calculation(int choice){
 
     case 8:
         /// For Square Root
-        cout << "Enter Number for Calculating Square: ";
+        while (gqueue.size() > 0){
+            	cout << gqueue.front();
+            	gqueue.pop();
+			};
         cin >> a;
 
         x = sqrt(a);
@@ -242,7 +281,10 @@ void ScientificCalculator::Calculation(int choice){
 
     case 11:
         /// For Natural Logarithm [ln]
-        cout << "Enter Natural Logarithm value: ";
+        while (hqueue.size() > 0){
+            	cout << hqueue.front();
+            	hqueue.pop();
+			};
         cin >> a;
 
         x = log(a); /// Log without base is equal to Natural Logarithm (ln)
