@@ -92,6 +92,7 @@ void ScientificCalculator::Calculation(int choice){
         history = sstream.str();
         break;
 
+		    
     case 4:
         /// For Division
         cout << "The formula follows: Dividend / Divisor = quotient" << endl;
