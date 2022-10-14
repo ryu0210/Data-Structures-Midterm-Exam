@@ -10,8 +10,8 @@ class ScientificCalculator
         void Continuing_Calculation(int choice);
         void Alternate_Calculation(int choice);
         void Alternate_Calculation_2(int choice);
-        void Save_History(void);
-        void Print_History(void);
+        void Show_History();
+        void Delete_History();
 
     private:
         int Option;
